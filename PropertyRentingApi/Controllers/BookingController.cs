@@ -20,7 +20,7 @@ namespace PropertyRentingApi.Controllers
             List<Booking>bookings=await BookingRepo.GetAllBooking();
             return Ok(bookings);
         }
-        [HttpGet("{api/Booking/UserName}")]
+        [HttpGet("api/Booking/UserName")]
 
         public async Task<ActionResult> GetBookingByUserName(string username)
         {
@@ -35,7 +35,7 @@ namespace PropertyRentingApi.Controllers
             }
         }
 
-        [HttpGet("{api/booking}")]
+        [HttpGet("{BookingId}")]
 
         public async Task<ActionResult>GetById(int BookingId)
         {
