@@ -9,7 +9,7 @@ namespace RentEaseLibrary.Models
     public interface IRentPropertRepo
     {
 
-        Task<List<RentProperty>> GetAllProperts();
+        Task<List<RentProperty>> GetAllProperty();
 
         Task<RentProperty>GetPropertyById(int PropertyId);
 

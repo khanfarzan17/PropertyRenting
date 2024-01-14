@@ -20,7 +20,7 @@ namespace RentEaseLibrary.Models
             ctx.SaveChanges();
         }
 
-        public async Task<List<RentProperty>> GetAllProperts()
+        public async Task<List<RentProperty>> GetAllProperty()
         {
             List<RentProperty> properties = await ctx.RentProperties.ToListAsync();
             return properties;

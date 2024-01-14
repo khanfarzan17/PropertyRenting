@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentEaseLibrary", "RentEaseLibrary\RentEaseLibrary.csproj", "{8F7EDADA-3E08-43C5-A1EB-1785467E731A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RentEaseLibrary", "RentEaseLibrary\RentEaseLibrary.csproj", "{8F7EDADA-3E08-43C5-A1EB-1785467E731A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyRentingApi", "PropertyRentingApi\PropertyRentingApi.csproj", "{37D81F0B-98E9-4255-8257-43D386E06534}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8F7EDADA-3E08-43C5-A1EB-1785467E731A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F7EDADA-3E08-43C5-A1EB-1785467E731A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F7EDADA-3E08-43C5-A1EB-1785467E731A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37D81F0B-98E9-4255-8257-43D386E06534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37D81F0B-98E9-4255-8257-43D386E06534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37D81F0B-98E9-4255-8257-43D386E06534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37D81F0B-98E9-4255-8257-43D386E06534}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
