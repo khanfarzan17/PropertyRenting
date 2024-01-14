@@ -49,9 +49,23 @@ namespace RentEaseLibrary.Models
             await ctx.SaveChangesAsync();
         }
 
-        public Task Login(User user)
+        public async Task Login(User user)
         {
-            throw new NotImplementedException();
+            try
+            {
+                string username = user.UserName;
+                User usr2login = await GetUserByUserName(username);
+
+                if(!usr2login.Password.Equals(usr2login.Password))
+                {
+                    throw new Exception();
+                }
+
+            }
+            catch (Exception )
+            {
+                throw new Exception("Invalid UserName or Password");
+            }
         }
     }
 }
