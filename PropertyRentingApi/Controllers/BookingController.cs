@@ -20,7 +20,7 @@ namespace PropertyRentingApi.Controllers
             List<Booking>bookings=await BookingRepo.GetAllBooking();
             return Ok(bookings);
         }
-        [HttpGet("{api/Booking/UserName}")]
+        [HttpGet("ByUserName/{UserName}")]
 
         public async Task<ActionResult> GetBookingByUserName(string username)
         {
@@ -35,7 +35,7 @@ namespace PropertyRentingApi.Controllers
             }
         }
 
-        [HttpGet("{api/booking}")]
+        [HttpGet("ById/{booking}")]
 
         public async Task<ActionResult>GetById(int BookingId)
         {
@@ -50,6 +50,30 @@ namespace PropertyRentingApi.Controllers
             }
         }
 
+        [HttpPost]
+
+        public async Task<ActionResult>InsertBooking(Booking booking)
+        {
+            await BookingRepo.InsertBooking(booking);
+            return Created($"api/booking/{booking.BookingID}", booking);
+
+        }
+
+        [HttpDelete("{BookingID}")]
+
+        public async Task<ActionResult> DeleteBooking(int BookingID)
+        {
+            await BookingRepo.DeleteBooking(BookingID);
+            return Ok();
+        }
+
+        [HttpPut]
+
+        public async Task<ActionResult>UpdateBooking(int BookingID, Booking booking)
+        {
+            await BookingRepo.UpdateBooking(BookingID, booking);
+            return Ok();    
+        }
 
 
     }
