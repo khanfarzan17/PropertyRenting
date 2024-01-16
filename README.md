@@ -36,5 +36,5 @@ Steps to Clone this Repository
 6.Choose the directory where you want to clone the repository in the "Local Repository" field.
 7.Click the "Clone" button.
 
-ER Diagram is also Present 
+ER Diagram is also Present Ok
 
