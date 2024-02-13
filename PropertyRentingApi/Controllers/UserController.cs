@@ -36,7 +36,7 @@ namespace PropertyRentingApi.Controllers
             }
         }
 
-        [HttpPost("{Login}")]
+        [HttpPost("Login")]
 
         public async Task<ActionResult>Login(User user)
         {
